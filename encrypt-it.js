@@ -1,6 +1,3 @@
-/*
- * Starter file 
- */
 (function() {
     "use strict";
   
@@ -17,11 +14,17 @@
     function init() {
       // Note: In this function, we usually want to set up our event handlers
       // for UI elements on the page.
+      var encryptButton = document.getElementById("encryptButton");
+      encryptButton.addEventListener("click", handleClick);
     }
   
     // Add any other functions in this area (you should not implement your
     // entire program in the init function, for similar reasons that
     // you shouldn't write an entire Java program in the main method).
+    function handleClick() {
+        console.log("Button clicked!");
+        // Add any other code you want to execute when the button is clicked
+    }
   
   })();
   
